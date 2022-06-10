@@ -1,0 +1,91 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"name": "lambda",
+			"path": "..\\..\\..\\..\\lambda"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "listRequests:index.handler (nodejs14.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "C:/Users/sesa284921/Desktop/POC-Serverless/lambda/listRequests",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs14.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			},
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "testDynamoose:index.handler (nodejs14.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "testDynamoose",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs14.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			},
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "requestsFunction:index.handler (nodejs14.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "requestsFunction",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs14.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			},
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "test:index.handler (nodejs14.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "test",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs14.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			},
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "getData:index.handler (nodejs14.x)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "getData",
+					"lambdaHandler": "index.handler"
+				},
+				"lambda": {
+					"runtime": "nodejs14.x",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			}
+		]
+	}
+}
